@@ -1,3 +1,1 @@
-# Blog
-# Blog
 # MyBlog
