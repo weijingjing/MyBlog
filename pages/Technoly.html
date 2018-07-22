@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Technoly</title>
+</head>
+<body>
+    <header></header>
+    <content>
+        <div>
+            <h1>HTML</h1>
+            <p>HTML常见元素</p>
+            <ul>
+                <li>meta,title,style,link,script,base</li>
+                <li>div,section,article,aside,header,footer</li>
+                <li>p,a</li>
+                <li>span,em,strong</li>
+                <li>table,thead,tbody,tr,td,ul,ol,li,dl,dt,dd</li>
+                <li>form,input,select,textarea,button</li>
+            </ul>
+            <p>元素的具体讲解</p>
+            <ol>
+                <li>eg:meta charset="UTF-8" 表示字符集是utf-8支持展示中英文和一些特殊字符</li>
+                <li>eg:meta name="viewport" content="width=device-width, initial-scale=1", maximum-scale=1, user-scalable=no 表示屏幕自定义展示的大小，最小展示一倍，最大展示一倍，不允许用户缩放
+                </li>
+                <li>eg:viewport 设定屏幕展示效果，如果不制定为980px iphone标准为375px iphone5为320px,width=device-width展示屏幕的宽度</li>
+                <li>eg:base href="/" 表示基础链接，a标签如果是123,那链接到123/下面的文件</li>
+            </ol>
+            <p>元素主要的特性</p>
+            <dl>
+                <dt>a[href,target]</dt>
+                <dd>href指定链接，target打开方式eg:_blank新窗口打开</dd>
+                <dt>img[src,alt]</dt>
+                <dd>src指定路径，alt表示题目指示语</dd>
+                <dt>table td[colspan,rowspan]</dt>
+                <dd>colspan上下合并单元格,rowspan左右合并单元格</dd>
+                <dt>form[target,method,enctype]</dt>
+                <dd>target规定在何处打开url_blank
+                   <em>_self</em> 
+                   <em>_parent</em>
+                    <em>_top</em>
+                    <em>framename</em>
+                method发送form-data的HTTP方法（post,get）
+                enctype发送数据前对其进行编码，主要针对post请求
+                </dd>
+                <dt>input[type,value]</dt>
+                <dd>type类型，value表单的默认值</dd>
+                <dt>button[type]</dt>
+                <dd>type类型:submit reset delete</dd>
+                <dt>select>option[value]</dt>
+                <dd>单选option value值，用id作唯一识别</dd>
+                <dt>label[for]</dt>
+                <dd>标签eg:[label for="SSN">Social Security Number:</label>
+                    input type="text" name="SocSecNum" id="SSN" />]</dd>
+            </dl>
+        </div>
+    </content>
+    <footer></footer>
+</body>
+</html>
