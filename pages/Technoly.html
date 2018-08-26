@@ -10,7 +10,7 @@
     <header></header>
     <content>
         <div>
-            <h1>HTML</h1>
+            <h1>第一章HTML</h1>
             <p>HTML常见元素</p>
             <ul>
                 <li>meta,title,style,link,script,base</li>
@@ -55,7 +55,7 @@
                 <dd>标签eg:[label for="SSN">Social Security Number:</label>
                     input type="text" name="SocSecNum" id="SSN" />]</dd>
             </dl>
-            <p>理解HTML</p>
+            <p>第二章理解HTML</p>
             <ul>
                 <li>文档的结构：section/introdaction/habitat/section(aside)大纲--结构清晰，语义明确http://h5o.github.io/</li>
                 <li>每个网页都有自己的网页大纲：word内容大纲</li>
@@ -71,7 +71,126 @@
                         <li>i icon 斜体eg:<i>flower</i></li>
                     </ul>
                 </li>
+                <li>HTML元素分类：
+                    <ul>
+                        <li>1.按默认样式分</li>
+                        <ul>
+                        <li>块级block（占一行）eg:p</li>
+                        <li>行内inline（内联元素）eg:span</li>
+                        <li>inline-block（对外展现是inline，对内是block）eg:select</li>
+                    </ul>
+                    <li>2.按内容分</li>
+                    <ul>
+                    <li>flow文档流 eg:div</li>
+                    <li>Heading标题 eg:h1~h6</li>
+                    <li>section部分 eg:article,aside,nav,section</li>
+                    <li>Phrasing短语 eg:addr,audio,br,button... (inline类型，会成为段落的一部分)</li>
+                    <li>Embedded可嵌入其他的元素 eg:canvas,embed,iframe,img,math,objrct... </li>
+                    <li>Interactive交互元素 eg:a,audio,button,video,label,abject,img... </li>
+                    <li>Metadate信息元素 eg:base,link,script,style,title... </li>
+                </ul>
+                <li>3.HTML元素嵌套关系
+                    <ul>
+                        <li>块级元素可以包含行内元素</li>
+                        <li>块级元素不一定能包含块级元素</li>
+                        <li>行内元素一般不能包含块级元素</li>
+                        <li>eg:a包含div正确</li>
+                        <li>eg:p包含a再包含div不正确</li>
+                        <li>eg:div包含a再包含div正确</li>
+                    </ul>
+                </li>
+                <li>4.HTML默认样式
+                    <ul>
+                        <li>默认样式的意义</li>
+                        <li>默认样式带来的问题</li>
+                        <li>CSS Reset</li>
+                        <li>eg:*{margin:0;padding:0}</li>
+                        <li>eg:“link rel="stylesheet" type="text/css" href="css/reset.css"”</li>
+                        <li>eg:Normalize.css--A modern HTML5-ready alternative to CSS resets</li>
+                    </ul>
+                </li>
+                    </ul>
+                </li>
             </ul>
+            <p>HTML面试真题</p>
+            <ol>
+                <li>doctype的意义是什么？
+                    <ul>
+                        <li>让浏览器以标准模式渲染</li>
+                        <li>让浏览器知道元素的合法性</li>
+                        <li>DOCTYPE标签是一种标准通用标记语言的文档类型声明，它的目的是要告诉标准通用标记语言解析器，它应该使用什么样的文档类型定义（DTD）来解析文档。</li>
+                    </ul>
+                </li>
+                
+                <li>HTML XHTML HTML5的关系？
+                        <ul>
+                            <li>HTML属于SGML</li>
+                            <li>XHTML属于XML，是HTML进行XML严格化的结果</li>
+                            <li>HTML5不属于SGML或XML，比XHTML宽松</li>
+                        </ul>
+                    </li>
+                    
+                <li>HTML5有什么变化？
+                        <ul>
+                            <li>新的语义话元素</li>
+                            <li>表单增强</li>
+                            <li>新的API（离线/音视频/图形/实时通信/本地存储/设备能力）。</li>
+                            <li>分类和嵌套变更</li>
+                        </ul>
+                    </li>
+                    
+                <li>em和i有什么区别？
+                        <ul>
+                            <li>em是语义化的标签，表强调</li>
+                            <li>i是纯样式的标签，表斜体</li>
+                            <li>HTML5中i不推荐使用，一般用作图标。</li>
+                        </ul>
+                    </li>
+                    
+                <li>语义化的意义是什么？
+                        <ul>
+                            <li>开发者容易理解</li>
+                            <li>机器容易理解结构（搜索/读屏软件）</li>
+                            <li>有助于SEO</li>
+                            <li>semantic microdata在html中加入标签</li>
+                        </ul>
+                    </li>
+                    
+                <li>哪些元素可以自闭合？
+                        <ul>
+                            <li>表单元素input</li>
+                            <li>图片img</li>
+                            <li>br/hr</li>
+                            <li>meta link</li>
+                        </ul>
+                    </li>
+                    
+                <li>HTML和DOM的关系？
+                        <ul>
+                            <li>HTML是死的</li>
+                            <li>DOM是由HTML解析而来的，是活的</li>
+                            <li>JS可以解析DOM</li>
+                        </ul>
+                    </li>
+                    
+                <li>property和attribute的区别？
+                        <ul>
+                            <li>attribute是死的</li>
+                            <li>property是活的</li>
+                        </ul>
+                    </li>
+                
+                    <li>form的作用有哪些？
+                            <ul>
+                                <li>直接提交表单</li>
+                                <li>使用submit/reset按钮</li>
+                                <li>便于浏览器保存表单</li>
+                                <li>第三方库可以整体提取值</li>
+                                <li>第三方库可以进行表单验证</li>
+                            </ul>
+                        </li>
+            </ol>
+            <p>第三章CCS理解</p>
         </div>
     </content>
     <footer></footer>
